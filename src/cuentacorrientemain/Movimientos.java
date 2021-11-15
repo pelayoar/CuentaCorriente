@@ -28,7 +28,7 @@ public class Movimientos extends CuentaCorriente {
         hora = LocalTime.now();
         saldoActual = cuenta.getSaldoActual();
         
-      
+        cuenta.setSaldoActual(saldoActual + cantidad);
         
     }
     

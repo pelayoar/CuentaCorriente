@@ -6,6 +6,7 @@
 package cuentacorrientemain;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -15,7 +16,7 @@ public class Cliente extends Cuenta{
     private String dni;
     private String nombre;
     private String direccion;
-    static ArrayList cuentas;
+    List<Cuenta> cuentas;
     
     
    
@@ -53,19 +54,21 @@ public class Cliente extends Cuenta{
         this.direccion = direccion;
     }
 
-    public static ArrayList getCuentas() {
+    public List getCuentas() {
         return cuentas;
     }
 
-    public static void setCuentas(ArrayList cuentas) {
-        Cliente.cuentas = cuentas;
+    public void setCuentas(ArrayList cuentas) {
+        this.cuentas = cuentas;
     }
+
+   
     
     
     
     
     
-    public static void addCuenta(Cuenta cuenta){
+    public void addCuenta(Cuenta cuenta){
         cuentas.add(cuenta);
     }
 }

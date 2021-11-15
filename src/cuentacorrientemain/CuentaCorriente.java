@@ -6,6 +6,7 @@
 package cuentacorrientemain;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -13,7 +14,7 @@ import java.util.ArrayList;
  */
 public class CuentaCorriente extends Cuenta {
     private double saldoActual;
-    static ArrayList movimientos;
+    List<Movimientos> movimientos;
     
     public CuentaCorriente(){
         
@@ -21,7 +22,7 @@ public class CuentaCorriente extends Cuenta {
     
     public CuentaCorriente(double saldoActual){
         this.saldoActual = saldoActual;
-        movimientos = new ArrayList();
+        movimientos = new ArrayList<>();
     }
 
     public double getSaldoActual() {
@@ -32,18 +33,20 @@ public class CuentaCorriente extends Cuenta {
         this.saldoActual = saldoActual;
     }
 
-    public static ArrayList getMovimientos() {
+    public List getMovimientos() {
         return movimientos;
     }
 
-    public static void setMovimientos(ArrayList movimientos) {
-        CuentaCorriente.movimientos = movimientos;
+    public void setMovimientos(ArrayList movimientos) {
+        this.movimientos = movimientos;
     }
+
+  
         
 
     
     
-    public static void addMovimientos(Movimientos movimiento){
+    public void addMovimientos(Movimientos movimiento){
         movimientos.add(movimiento);
     }
 }

@@ -15,11 +15,12 @@ public class CuentaCorrienteMain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Cuenta cuenta1 = new Cuenta("1234 5678 9123 4567", "Gran Via");
+        Cliente cliente1 = new Cliente("48738593P", "Juan José", "Gran Vía, 24");
+        CuentaCorriente cuentaCorriente1 = new CuentaCorriente(100.0);
+        Movimientos movimiento1 = new Movimientos("1234 5678 9123 4567", 100.0f, cuentaCorriente1);
         
-        System.out.println(args.length);
-        
-        Cliente cliente = new Cliente("48738593P", "Juan José", "Gran Vía, 24");
-        Cuenta cuenta1 = new Cuenta();
+        cuenta1.addClient(cliente1);
 
     }
 
