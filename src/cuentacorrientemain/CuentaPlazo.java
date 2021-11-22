@@ -5,13 +5,14 @@
  */
 package cuentacorrientemain;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  *
  * @author a20pelayoar
  */
-public class CuentaPlazo {
+public class CuentaPlazo implements Serializable{
     private float intereses;
     private Date fechaVencimiento;
     private long depositoPlazo;

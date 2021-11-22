@@ -5,6 +5,7 @@
  */
 package cuentacorrientemain;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Date;
@@ -14,7 +15,7 @@ import java.util.Date;
  *
  * @author a20pelayoar
  */
-public class Movimientos extends CuentaCorriente {
+public class Movimientos extends CuentaCorriente implements Serializable{
     private String numeroCta;
     private LocalDate fechaOperacion;
     private LocalTime hora;

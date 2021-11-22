@@ -5,6 +5,7 @@
  */
 package cuentacorrientemain;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +13,7 @@ import java.util.List;
  *
  * @author a20pelayoar
  */
-public class Cuenta {
+public class Cuenta implements Serializable{
 
     private String numero;
     private String sucursal;
