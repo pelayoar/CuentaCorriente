@@ -27,9 +27,10 @@ public class CuentaCorrienteMain {
         CuentaCorriente cuentaCorriente1 = new CuentaCorriente(100.0);
         Movimientos movimiento1 = new Movimientos("1234 5678 9123 4567", 100.0f, cuentaCorriente1);
         
-        cuenta1.addClient(cliente1);
         cliente1.addCuenta(cuenta1);
-        cuentaCorriente1.addClient(cliente1);
+        cuenta1.addClient(cliente1);
+        
+        cuentaCorriente1.addMovimientos(movimiento1);
         
         
         try{

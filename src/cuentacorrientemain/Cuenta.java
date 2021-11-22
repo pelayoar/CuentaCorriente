@@ -26,7 +26,7 @@ public class Cuenta {
 
         this.numero = numero;
         this.sucursal = sucursal;
-        clientes = new ArrayList<Cliente>();
+        clientes =new ArrayList<Cliente>();
 
     }
 
