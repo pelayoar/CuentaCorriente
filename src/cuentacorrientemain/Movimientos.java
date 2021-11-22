@@ -7,6 +7,7 @@ package cuentacorrientemain;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.Date;
 
 
 /**
@@ -33,7 +34,14 @@ public class Movimientos extends CuentaCorriente {
     }
     
     
-    
+    public Date fechaHoy(){
+      Date fechaHoy = new Date(new java.util.Date().getTime());
+      Date hora = new Date(fechaHoy.getTime());
+      
+      return fechaHoy;
+        
+        
+    }
   
     
 }
