@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class CuentaCorriente extends Cuenta implements Serializable{
     private double saldoActual;
-    List<Movimientos> movimientos;
+    static List<Movimientos> movimientos;
     
     public CuentaCorriente(){
         

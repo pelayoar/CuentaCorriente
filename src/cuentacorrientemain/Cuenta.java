@@ -17,7 +17,7 @@ public class Cuenta implements Serializable{
 
     private String numero;
     private String sucursal;
-    List<Cliente> clientes;
+    static List<Cliente> clientes;
     
     public Cuenta(){
         

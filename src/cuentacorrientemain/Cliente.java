@@ -17,7 +17,7 @@ public class Cliente extends Cuenta implements Serializable{
     private String dni;
     private String nombre;
     private String direccion;
-    List<Cuenta> cuentas;
+    static List<Cuenta> cuentas;
     
     
    
